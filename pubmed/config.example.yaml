@@ -1,0 +1,21 @@
+# Copy to config.yaml and edit paths / queries.
+
+api_key: ""  # optional NCBI API key (https://www.ncbi.nlm.nih.gov/account/)
+
+search_queries:
+  - "machine learning[Title/Abstract] AND oncology[MeSH Terms]"
+
+# Weak-supervision training (optional)
+positive_queries:
+  - "machine learning[Title/Abstract] AND oncology[MeSH Terms]"
+negative_queries:
+  - "cardiology[MeSH Terms] NOT machine learning[Title/Abstract]"
+
+paths:
+  xml_dir: data/xml
+  classifier: artifacts/classifier.joblib
+  parquet_output: data/relevant_papers.parquet
+  last_run: artifacts/last_run.pkl
+  new_and_updated: data/new_and_updated.parquet
+
+max_records: 1000  # cap downloads during testing; omit for full result set

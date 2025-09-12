@@ -1,0 +1,7 @@
+data/
+artifacts/
+logs/
+*.pkl
+__pycache__/
+.ipynb_checkpoints/
+config.yaml
