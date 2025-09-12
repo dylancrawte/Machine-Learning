@@ -1,0 +1,8 @@
+artifacts/
+.env
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+data/df.csv
+data/cluster0.csv
+data/cluster1.csv
