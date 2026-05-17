@@ -8,16 +8,6 @@ You *can* run them locally if you have a machine with a CUDA-capable NVIDIA GPU 
 
 **Recommended: run them on [Kaggle Notebooks](https://www.kaggle.com/code).** Kaggle gives you free access to GPU time in the browser, and the notebooks in this repo are written to use Kaggle paths and datasets out of the box.
 
-### Why use Kaggle instead of running locally?
-
-| | Local (no GPU) | Local (with GPU) | Kaggle Notebook |
-|---|---|---|---|
-| Training speed | Very slow | Fast | Fast (free GPU) |
-| Setup | Install PyTorch, CUDA, datasets yourself | Same, plus GPU drivers | Mostly click-through |
-| Dataset paths | You must download and fix paths | Same | Add dataset → paths work |
-
-The card classifier notebook, for example, loads images from `/kaggle/input/...` and uses a pretrained model (`EfficientNet-B0` via `timm`). That combination is practical on Kaggle’s GPU; on CPU-only hardware it is still possible but not a good first experience.
-
 ### How to set up a Kaggle notebook
 
 1. **Create a Kaggle account**  
@@ -32,8 +22,8 @@ The card classifier notebook, for example, loads images from `/kaggle/input/...`
    - Under **Accelerator**, choose **GPU** (not “None”).  
    - Save. Kaggle will restart the session with GPU enabled when needed.
 
-4. **Add the playing cards dataset**  
-   The card classifier expects the [Cards Image Dataset-Classification](https://www.kaggle.com/datasets/gpiosenka/cards-image-datasetclassification) dataset.  
+4. **Add the dataset**  
+   The card classifier (for example) expects the [Cards Image Dataset-Classification](https://www.kaggle.com/datasets/gpiosenka/cards-image-datasetclassification) dataset.  
    - In the notebook sidebar, click **+ Add data** (or **Add Input**).  
    - Search for `cards-image-datasetclassification` or open the dataset page and click **New Notebook** / **Add to notebook**.  
    - After it is attached, files appear under `/kaggle/input/cards-image-datasetclassification/` with `train/`, `valid/`, and `test/` folders.

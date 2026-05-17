@@ -4,7 +4,7 @@ This folder has a couple of small ML workflows built around Spotify-style audio 
 
 If you are just getting started, use **Path A** below. You do not need a Spotify Developer account or API keys; it runs on the CSV data already in this repo.
 
-**Running on Kaggle:** This project does not need a GPU, but Kaggle Notebooks are still a handy way to run everything in the browser without setting up Python locally. Create a notebook at [kaggle.com/code](https://www.kaggle.com/code), upload `spotify-ml.ipynb` (or clone this repo into the notebook session), then install dependencies with `!pip install -r spotify-ml/requirements.txt` in a cell. The CSV files under `spotify-ml/data/` are already in the repo, so you do not need to add an extra Kaggle dataset for Path A. Run the script commands from the notebook (`!python spotify-ml/scripts/run_clustering.py`, and so on) or work through the notebook cells if you prefer. You can leave the accelerator on **None** in notebook settings — CPU is enough.
+**Running on Kaggle:** This project does not need a GPU, but Kaggle Notebooks are still a handy way to run everything in the browser without setting up Python locally. Create a notebook at [kaggle.com/code](https://www.kaggle.com/code), upload `spotify-ml.ipynb` (or clone this repo into the notebook session), then install dependencies with `!pip install -r spotify-ml/requirements.txt` in a cell. The CSV files under `spotify-ml/data/` are already in the repo, so you do not need to add an extra Kaggle dataset for Path A. Run the script commands from the notebook (`!python spotify-ml/scripts/run_clustering.py`, and so on) or work through the notebook cells if you prefer.
 
 ---
 

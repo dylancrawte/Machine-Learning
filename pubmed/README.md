@@ -1,8 +1,9 @@
 # PubMed Relevance Classifier
 
-A **pandas + scikit-learn** recreation of the [Pubmed-Pipeline](https://github.com/nicford/Pubmed-Pipeline) library. It downloads biomedical papers from **NCBI PubMed**, trains a text classifier to mark papers as **Relevant** or **Not Relevant**, and writes filtered results to **Parquet**.
+A **pandas + scikit-learn**. It downloads biomedical papers from PubMed, trains a text classifier to mark papers as **Relevant** or **Not Relevant**, and writes filtered results to **Parquet**.
 
-This project lives under `kaggle-ML/pubmed` alongside the card-classifier notebooks. It does **not** require Apache Spark, GNU parallel, or shell download scripts—everything runs in Python.
+Results have been put into the .gitignore file due to size. if you would like to see the results, clone the repo and follow the below steps.
+
 
 ## What it does
 
@@ -14,7 +15,7 @@ This project lives under `kaggle-ML/pubmed` alongside the card-classifier notebo
 | **Setup pipeline** | Downloads papers for your query, keeps only `Relevant` rows, saves Parquet |
 | **Update pipeline** | Fetches new/changed papers since the last run and merges into the main Parquet file |
 
-The original library expected you to supply a pre-trained `joblib` classifier. This version **includes training** so you can go end-to-end from search queries to a saved model.
+The original library expected you to supply a pre-trained `joblib` classifier. This version includes training so you can go end-to-end from search queries to a saved model.
 
 ## Project layout
 
