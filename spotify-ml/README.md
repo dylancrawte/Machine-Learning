@@ -13,7 +13,7 @@ If you are just getting started, use **Path A** below. You do not need a Spotify
 ```bash
 cd kaggle-ML/spotify-ml
 python -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
